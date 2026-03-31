@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FBTC – Future Building Training Consultants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo" onclick="navigate('home')">
+    <img src="assets/images/logo.png" alt="FBTC" class="nav-logo-img">
+    <div>
+      <div class="nav-logo-text">Future Building</div>
+      <div class="nav-logo-sub">Training Consultants</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="navigate('home')" data-page="home">Home</a></li>
+    <li><a onclick="navigate('about')" data-page="about">About</a></li>
+    <li><a onclick="navigate('construction')" data-page="construction">Construction</a></li>
+    <li><a onclick="navigate('medicals')" data-page="medicals">Medicals</a></li>
+    <li><a onclick="navigate('ohs')" data-page="ohs">OHS</a></li>
+    <li><a onclick="navigate('softskills')" data-page="softskills">Soft Skills</a></li>
+    <li><a onclick="navigate('operator')" data-page="operator">Operator</a></li>
+  </ul>
+  <div class="nav-contact-mini">
+    <a href="tel:0218229052">021 822 9052</a>
+  </div>
+  <a class="nav-cta" onclick="navigate('contact')">Contact Us</a>
+</nav>
+
+
+<div id="app">
+
+  <!-- ===== HOME ===== -->
+  <div id="page-home" class="page">
+
+    <!-- HERO -->
+    <div class="home-hero">
+      <div class="home-hero-left">
+        <p class="home-hero-eyebrow">Accredited Training &amp; Medical Services</p>
+        <h1>Train for a<br><em>Better</em><br>Tomorrow</h1>
+        <p class="home-hero-body">FBTC is a TETA-accredited training and medical service provider based in Brackenfell, Cape Town. We equip workforces across construction, healthcare, and industry with the skills and compliance they need to thrive.</p>
+        <div class="home-hero-actions">
+          <a class="btn-primary" onclick="navigate('about')">Our Story</a>
+          <a class="btn-outline" onclick="navigate('contact')">Get in Touch</a>
+        </div>
+      </div>
+      <div class="home-hero-right">
+        <div>
+          <p class="accred-label">Accreditations &amp; Registrations</p>
+          <div class="accred-badges">
+            <div class="accred-badge">TETA 12-223</div>
+            <div class="accred-badge">CETA 1R15167</div>
+            <div class="accred-badge">SAIOSH</div>
+            <div class="accred-badge">Dept. of Labour</div>
+            <div class="accred-badge">Dept. of Transport</div>
+          </div>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-item">
+            <div class="stat-num">23<span>+</span></div>
+            <div class="stat-label">Years of experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Training divisions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">L<span>4</span></div>
+            <div class="stat-label">B-BBEE rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100<span>%</span></div>
+            <div class="stat-label">Accredited courses</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announce-bar">
+      <div class="announce-tag">New Address</div>
+      <p class="announce-text">We've moved to our own offices — <strong>6 Eben Olivier Street, Springbok Park, Brackenfell</strong> since August 2024.</p>
+    </div>
+
+    <!-- FEATURE STRIP -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--border);">
+      <div style="padding:28px 32px;border-right:1px solid var(--border);display:flex;gap:14px;align-items:flex-start;">
+        <div style="width:40px;height:40px;background:var(--gold-bg);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:14px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:4px;">Fully Accredited</div>
+          <div style="font-size:12px;color:var(--text-muted);line-height:1.6;">TETA, CETA and SAIOSH accredited. Every course meets national standards.</div>
+        </div>
+      </div>
+      <div style="padding:28px 32px;border-right:1px solid var(--border);display:flex;gap:14px;align-items:flex-start;">
+        <div style="width:40px;height:40px;background:var(--gold-bg);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:14px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:4px;">On-Site Training</div>
+          <div style="font-size:12px;color:var(--text-muted);line-height:1.6;">We come to you. Mobile training and medical units deployed to your premises.</div>
+        </div>
+      </div>
+      <div style="padding:28px 32px;border-right:1px solid var(--border);display:flex;gap:14px;align-items:flex-start;">
+        <div style="width:40px;height:40px;background:var(--gold-bg);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:14px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:4px;">Expert Facilitators</div>
+          <div style="font-size:12px;color:var(--text-muted);line-height:1.6;">All facilitators are registered subject matter experts with the relevant SETAs.</div>
+        </div>
+      </div>
+      <div style="padding:28px 32px;display:flex;gap:14px;align-items:flex-start;">
+        <div style="width:40px;height:40px;background:var(--gold-bg);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:14px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:4px;">Renewal Management</div>
+          <div style="font-size:12px;color:var(--text-muted);line-height:1.6;">We track certification renewals so your compliance never lapses unnoticed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE-LED COURSE SHOWCASE -->
+    <div class="section-header">
+      <h2 class="section-title">Our <span>Training Areas</span></h2>
+      <a class="section-link" onclick="navigate('about')">About FBTC →</a>
+    </div>
+
+    <!-- Row 1: OHS full-width feature -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+      <div style="position:relative;overflow:hidden;min-height:340px;">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Construction safety training" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.55) 0%,transparent 70%);"></div>
+        <div style="position:absolute;bottom:32px;left:36px;right:36px;">
+          <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:8px;">CETA 1R15167</div>
+          <div style="font-family:var(--font-head);font-size:28px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:8px;">Construction Training</div>
+          <p style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.6;margin-bottom:14px;">Scaffolding, working at heights, confined spaces, hand &amp; power tools, roadside safety and more — all CETA-accredited.</p>
+          <a onclick="navigate('construction')" style="display:inline-block;background:var(--gold);color:#fff;padding:10px 20px;font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;cursor:pointer;">View Courses →</a>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-rows:1fr 1fr;">
+        <div style="position:relative;overflow:hidden;border-bottom:1px solid var(--border);">
+          <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=600&q=80" alt="Forklift operator training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:170px;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,transparent 60%);"></div>
+          <div style="position:absolute;bottom:20px;left:24px;right:24px;">
+            <div style="font-family:var(--font-head);font-size:20px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:4px;">Operator Training</div>
+            <p style="font-size:12px;color:rgba(255,255,255,0.8);">F-codes &amp; C-codes — Forklifts, cranes, plant &amp; HAZCHEM</p>
+          </div>
+          <div style="position:absolute;inset:0;cursor:pointer;" onclick="navigate('operator')"></div>
+        </div>
+        <div style="position:relative;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&q=80" alt="Medical health check" style="width:100%;height:100%;object-fit:cover;display:block;min-height:170px;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,transparent 60%);"></div>
+          <div style="position:absolute;bottom:20px;left:24px;right:24px;">
+            <div style="font-family:var(--font-head);font-size:20px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:4px;">Medical Services</div>
+            <p style="font-size:12px;color:rgba(255,255,255,0.8);">Operator &amp; full occupational health medicals — on-site available</p>
+          </div>
+          <div style="position:absolute;inset:0;cursor:pointer;" onclick="navigate('medicals')"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: OHS + Soft Skills side by side -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+      <div style="position:relative;overflow:hidden;min-height:280px;border-right:1px solid var(--border);">
+        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80" alt="OHS safety first aid" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,transparent 55%);"></div>
+        <div style="position:absolute;bottom:28px;left:32px;right:32px;">
+          <div style="font-family:var(--font-head);font-size:24px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:6px;">OHS Training</div>
+          <p style="font-size:13px;color:rgba(255,255,255,0.8);margin-bottom:12px;">First aid, fire fighting, SHE rep, hazardous goods, OHS legislation and 15+ additional courses.</p>
+          <a onclick="navigate('ohs')" style="display:inline-block;border:1px solid rgba(255,255,255,0.5);color:#fff;padding:8px 18px;font-size:12px;font-weight:600;text-decoration:none;cursor:pointer;">View Courses →</a>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;min-height:280px;">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80" alt="Soft skills team training" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,transparent 55%);"></div>
+        <div style="position:absolute;bottom:28px;left:32px;right:32px;">
+          <div style="font-family:var(--font-head);font-size:24px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:6px;">Soft Skills</div>
+          <p style="font-size:13px;color:rgba(255,255,255,0.8);margin-bottom:12px;">Workplace, management, leadership, customer service and financial skills for every level of your organisation.</p>
+          <a onclick="navigate('softskills')" style="display:inline-block;border:1px solid rgba(255,255,255,0.5);color:#fff;padding:8px 18px;font-size:12px;font-weight:600;text-decoration:none;cursor:pointer;">View Courses →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY FBTC SECTION -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+      <div style="padding:56px 64px;border-right:1px solid var(--border);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;">Why Choose FBTC</p>
+        <h2 style="font-family:var(--font-head);font-size:38px;font-weight:700;text-transform:uppercase;color:var(--text);line-height:1.05;margin-bottom:20px;">Your Workforce.<br>Our Expertise.</h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:18px;">Established in 2011 by Francois Gantz, FBTC has grown into a leading accredited training and medical service provider in the Western Cape. With more than 23 years of combined training experience, we deliver practical, results-driven interventions that translate directly into a safer, more skilled and compliant workforce.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:28px;">Our customised Learner Management System tracks every certification and flags renewals proactively — so your team stays compliant without the admin burden.</p>
+        <a class="btn-primary" onclick="navigate('about')" style="text-decoration:none;">Read Our Full Story →</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);align-content:start;">
+        <div style="background:#fff;padding:32px 28px;">
+          <div style="font-family:var(--font-head);font-size:42px;font-weight:700;color:var(--gold);line-height:1;">23<span style="font-size:24px;">+</span></div>
+          <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">Years of combined training experience</div>
+        </div>
+        <div style="background:#fff;padding:32px 28px;">
+          <div style="font-family:var(--font-head);font-size:42px;font-weight:700;color:var(--gold);line-height:1;">6</div>
+          <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">Distinct accredited training divisions</div>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-top:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:42px;font-weight:700;color:var(--gold);line-height:1;">L4</div>
+          <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">B-BBEE Level 4 with 100% procurement recognition</div>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-top:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:42px;font-weight:700;color:var(--gold);line-height:1;">ZA</div>
+          <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">Nationwide footprint from our Cape Town base</div>
+        </div>
+        <div style="background:var(--gold);padding:32px 28px;grid-column:span 2;border-top:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:6px;">TETA Primary Accreditation</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.65;">Registration No. <strong style="color:#fff;">TETA12-223</strong> — our core accreditation with the Transport Education &amp; Training Authority, supported by CETA, SAIOSH, Dept. of Labour and Dept. of Transport registrations.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div style="background:var(--bg-section);border-bottom:1px solid var(--border);padding:56px 80px;">
+      <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;text-align:center;">The Process</p>
+      <h2 style="font-family:var(--font-head);font-size:32px;font-weight:700;text-transform:uppercase;color:var(--text);text-align:center;margin-bottom:48px;">How We Work With You</h2>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--border);border:1px solid var(--border);">
+        <div style="background:#fff;padding:32px 28px;position:relative;">
+          <div style="font-family:var(--font-head);font-size:48px;font-weight:700;color:var(--gold-border);line-height:1;margin-bottom:12px;">01</div>
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:10px;">Needs Assessment</div>
+          <p style="font-size:13px;color:var(--text-muted);line-height:1.65;">We assess your workforce's compliance gaps and training requirements across all departments and roles.</p>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-left:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:48px;font-weight:700;color:var(--gold-border);line-height:1;margin-bottom:12px;">02</div>
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:10px;">Custom Plan</div>
+          <p style="font-size:13px;color:var(--text-muted);line-height:1.65;">We design a tailored training and medical schedule that minimises disruption to your operations.</p>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-left:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:48px;font-weight:700;color:var(--gold-border);line-height:1;margin-bottom:12px;">03</div>
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:10px;">Delivery</div>
+          <p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Expert facilitators deliver at your site or our Brackenfell premises. Certificates issued on completion.</p>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-left:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:48px;font-weight:700;color:var(--gold-border);line-height:1;margin-bottom:12px;">04</div>
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:10px;">Ongoing Support</div>
+          <p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Our LMS tracks all certifications and alerts you before renewals fall due. Compliance, managed for you.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <div style="display:grid;grid-template-columns:1fr auto;align-items:center;padding:44px 80px;background:var(--gold);gap:32px;border-bottom:1px solid var(--border);">
+      <div>
+        <div style="font-family:var(--font-head);font-size:28px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:8px;">Ready to Train Your Workforce?</div>
+        <p style="font-size:14px;color:rgba(255,255,255,0.85);max-width:560px;">Contact us today for a no-obligation training needs assessment. We serve clients across South Africa from our Brackenfell base.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-shrink:0;">
+        <a onclick="navigate('contact')" style="display:inline-block;background:#fff;color:var(--gold);padding:13px 28px;font-size:13px;font-weight:700;letter-spacing:0.5px;text-decoration:none;cursor:pointer;white-space:nowrap;">Get a Quote</a>
+        <a href="tel:0218229052" style="display:inline-block;border:1.5px solid rgba(255,255,255,0.6);color:#fff;padding:13px 28px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;">021 822 9052</a>
+      </div>
+    </div>
+
+    <!-- ACCREDITATION LOGOS STRIP -->
+    <div style="padding:32px 80px;border-bottom:1px solid var(--border);background:#fff;">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:20px;text-align:center;">Our Accreditations &amp; Registrations</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">TETA</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">CETA</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">SAIOSH</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">SAQA</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">Services SETA</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">HWSETA</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">Dept. of Labour</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">Dept. of Transport</div>
+        <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">Umalusi</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <div id="page-about" class="page">
+    <!-- HERO IMAGE BAND -->
+    <div style="position:relative;overflow:hidden;min-height:320px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=80" alt="Team at work" style="width:100%;height:100%;object-fit:cover;display:block;min-height:320px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Who We Are</p>
+        <h1 style="font-family:var(--font-head);font-size:56px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:14px;">About FBTC</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:500px;line-height:1.7;">Established in 2011, Future Building Training Consultants has grown into a trusted, nationally-recognised accredited training and medical services provider.</p>
+      </div>
+    </div>
+
+    <!-- VISION + MISSION SPLIT -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+      <div style="padding:52px 64px;border-right:1px solid var(--border);">
+        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;">Our Vision</p>
+        <h2 style="font-family:var(--font-head);font-size:30px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:16px;">Train for a Better Tomorrow</h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">With the ever-changing and challenging South African economy, our vision is to give learners the required skills to be employable. The return on investment for our clients is a skilled, legislatively compliant workforce.</p>
+      </div>
+      <div style="padding:52px 64px;">
+        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;">Our Mission</p>
+        <h2 style="font-family:var(--font-head);font-size:30px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:16px;">Market Leadership Through Quality</h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">We aim to become a market leader within our scope of accreditation, providing portable skills for the South African workforce through quality, accredited training interventions that produce measurable results.</p>
+      </div>
+    </div>
+
+    <!-- COMPANY STORY + STATS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+      <div style="padding:52px 64px;border-right:1px solid var(--border);">
+        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;">Our Story</p>
+        <h2 style="font-family:var(--font-head);font-size:30px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:18px;">Founded 2011 by Francois Gantz</h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:16px;">FBT Consultants (Reg. No. 2011/031684/23) was established in September 2011 with a focus on Training and Development Solutions. Built on strong moral principles, we've grown into a proud company serving clients across South Africa.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:16px;">Our primary accreditation is with the <strong style="color:var(--text);">Transport Education and Training Authority (TETA)</strong> — Registration No. <strong style="color:var(--gold);">TETA12-223</strong>. We are additionally registered with CETA, SAIOSH, the Department of Labour, and the Department of Transport.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:28px;">Our Quality Management System is managed by our managing member, ensuring clients receive the support they require. All learner data is captured onto our customised Learner Management System — enabling proactive renewal management before compliance issues arise.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">We hold a <strong style="color:var(--text);">Level 4 B-BBEE certificate</strong> with 100% procurement recognition, and an occupational health nurse is on standby for operator and full medicals (Western Cape only).</p>
+      </div>
+      <div style="display:flex;flex-direction:column;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1;">
+          <div style="background:var(--bg-off);padding:36px 32px;display:flex;flex-direction:column;justify-content:center;">
+            <div style="font-family:var(--font-head);font-size:52px;font-weight:700;color:var(--gold);line-height:1;">23<span style="font-size:28px;">+</span></div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:6px;">Years combined experience</div>
+          </div>
+          <div style="background:var(--bg-off);padding:36px 32px;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--border);">
+            <div style="font-family:var(--font-head);font-size:52px;font-weight:700;color:var(--gold);line-height:1;">6</div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:6px;">Accredited training divisions</div>
+          </div>
+          <div style="background:var(--bg-off);padding:36px 32px;display:flex;flex-direction:column;justify-content:center;border-top:1px solid var(--border);">
+            <div style="font-family:var(--font-head);font-size:52px;font-weight:700;color:var(--gold);line-height:1;">L4</div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:6px;">B-BBEE level, 100% procurement</div>
+          </div>
+          <div style="background:var(--bg-off);padding:36px 32px;display:flex;flex-direction:column;justify-content:center;border-top:1px solid var(--border);border-left:1px solid var(--border);">
+            <div style="font-family:var(--font-head);font-size:52px;font-weight:700;color:var(--gold);line-height:1;">ZA</div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:6px;">Nationwide footprint</div>
+          </div>
+        </div>
+        <div style="background:var(--gold);padding:32px;border-top:1px solid rgba(255,255,255,0.15);">
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:10px;">Accreditations at a Glance</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <div style="padding:5px 12px;background:rgba(255,255,255,0.15);font-size:11px;font-weight:600;letter-spacing:0.8px;color:#fff;text-transform:uppercase;">TETA12-223</div>
+            <div style="padding:5px 12px;background:rgba(255,255,255,0.15);font-size:11px;font-weight:600;letter-spacing:0.8px;color:#fff;text-transform:uppercase;">CETA 1R15167</div>
+            <div style="padding:5px 12px;background:rgba(255,255,255,0.15);font-size:11px;font-weight:600;letter-spacing:0.8px;color:#fff;text-transform:uppercase;">SAIOSH</div>
+            <div style="padding:5px 12px;background:rgba(255,255,255,0.15);font-size:11px;font-weight:600;letter-spacing:0.8px;color:#fff;text-transform:uppercase;">CI 219/3/12/1</div>
+            <div style="padding:5px 12px;background:rgba(255,255,255,0.15);font-size:11px;font-weight:600;letter-spacing:0.8px;color:#fff;text-transform:uppercase;">PRDP (D) 2016/161</div>
+            <div style="padding:5px 12px;background:rgba(255,255,255,0.15);font-size:11px;font-weight:600;letter-spacing:0.8px;color:#fff;text-transform:uppercase;">No: 449</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="display:grid;grid-template-columns:1fr auto;align-items:center;padding:44px 80px;background:var(--bg-section);gap:32px;border-bottom:1px solid var(--border);">
+      <div>
+        <div style="font-family:var(--font-head);font-size:26px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:6px;">Ready to Work With Us?</div>
+        <p style="font-size:14px;color:var(--text-muted);">Contact us for a training needs assessment or to enquire about any of our courses and medical services.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-shrink:0;">
+        <a onclick="navigate('contact')" style="display:inline-block;background:var(--gold);color:#fff;padding:13px 28px;font-size:13px;font-weight:700;letter-spacing:0.5px;text-decoration:none;cursor:pointer;white-space:nowrap;">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONSTRUCTION ===== -->
+  <div id="page-construction" class="page">
+    <div style="position:relative;overflow:hidden;min-height:300px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80" alt="Construction training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">CETA Accredited · CETA 1R15167</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">Construction Training</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">Short courses for the construction sector covering safety, access equipment, tools and confined working environments. Public classes available at our Brackenfell premises.</p>
+      </div>
+    </div>
+    <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px;">Short Courses: Construction</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);">
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Erect, use and dismantle access equipment</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Scaffold Inspection</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Implement roadside safety procedures</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Apply Health and Safety</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Work in confined spaces</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Procure Resources</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Hand Tools</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Power Tools</span></div>
+        <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Working at Heights Level 1</span></div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr auto;align-items:center;padding:32px 80px;background:var(--gold-bg);border-bottom:1px solid var(--gold-border);gap:32px;">
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div style="width:36px;height:36px;background:var(--gold);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;flex-shrink:0;">i</div>
+        <p style="font-size:14px;color:var(--text-mid);line-height:1.65;"><strong style="color:var(--text);">Public Classes Available.</strong> Construction courses are offered directly to the public at our Brackenfell premises. Contact us for upcoming schedules and pricing.</p>
+      </div>
+      <a onclick="navigate('contact')" style="display:inline-block;background:var(--gold);color:#fff;padding:12px 24px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;white-space:nowrap;">Enquire →</a>
+    </div>
+  </div>
+
+  <!-- ===== MEDICALS ===== -->
+  <div id="page-medicals" class="page">
+    <div style="position:relative;overflow:hidden;min-height:300px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1400&q=80" alt="Medical examination" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Occupational Health · Western Cape</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">Medical Services</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">Accredited occupational health assessments for operators, general workers and specialised industrial roles. Mobile unit available for on-site service with no booth required.</p>
+      </div>
+    </div>
+    <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:32px;">
+        <div style="background:#fff;padding:32px 28px;">
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:6px;padding-bottom:10px;border-bottom:2px solid var(--gold);display:inline-block;">Operator Medical</div>
+          <div style="font-size:12px;color:var(--text-muted);margin-bottom:16px;margin-top:4px;">Forklifts, Reach Trucks &amp; Driven Machinery Act</div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Physical Examination</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Vision Screening (KEYSTONE)</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Individual Report</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Fit for Employment Certificate</li>
+          </ul>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-left:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--gold);display:inline-block;">Full Medical Exam</div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Work Information &amp; Medical History</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Physical Medical Examination</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Physical Observations</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Vision Screening (KEYSTONE)</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Individual Report &amp; Certificate</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Audiogram (Hearing Assessment)</li>
+          </ul>
+        </div>
+        <div style="background:#fff;padding:32px 28px;border-left:1px solid var(--border);">
+          <div style="font-family:var(--font-head);font-size:16px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--gold);display:inline-block;">Additional Exams</div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Lung Function</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Audio &amp; Vision Screening</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Annexure 3 (Construction Regs)</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Working at Heights Assessment</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Food Handling &amp; Cold Store</li>
+            <li style="font-size:13px;color:var(--text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;">✓</span>Drug Testing</li>
+          </ul>
+        </div>
+      </div>
+      <div style="background:var(--gold);padding:32px 36px;display:flex;gap:24px;align-items:flex-start;">
+        <div style="width:48px;height:48px;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-head);font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:6px;">Mobile Medical Unit</div>
+          <p style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Medicals can be conducted on your site to minimise impact on production. We also offer a <strong style="color:#fff;">NBR (No Booth Required)</strong> option for clients with limited parking. Contact us to arrange on-site scheduling across the Western Cape.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== OHS ===== -->
+  <div id="page-ohs" class="page">
+    <div style="position:relative;overflow:hidden;min-height:300px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1400&q=80" alt="OHS safety training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Workplace Safety &amp; Compliance</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">OHS Training</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">A comprehensive suite of Occupational Health &amp; Safety short courses to keep your workplace legislatively compliant. Public classes available at our Brackenfell premises.</p>
+      </div>
+    </div>
+    <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px;">OHS Short Courses</p>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:32px;">
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Fire-Fighting.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Apply fire fighting techniques</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Chemical-Handling.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Controlling hazardous and dangerous goods</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Chemical-Handling.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Move and store a hazardous load</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Risk-Assessment.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Continuous risk assessment</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Accident-Investigation.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Conduct an investigation into workplace incidents</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-First-Aid.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">First Aid Level 1 — Basic Life Support &amp; First Aid Procedures</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-She-Representative.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Health and Safety Representative (SHE Rep)</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Introduction to Occupational Health and Safety</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">OHS and general housekeeping</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Evacuation-Procedures.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Evacuation Procedures (Fire Marshall)</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">HIV in the Workplace</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Work Permits</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Movement of people and material</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">OHS Legislation</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Legal-Liability.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">OHS Act — Responsibilities / Liabilities</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-OHS-and-Environmental-Principles.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Apply OHS and Environmental Principles</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Baseline Assessments</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Conduct, report and follow up on a safety audit inspection</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr auto;align-items:center;padding:24px 28px;background:var(--gold-bg);border:1px solid var(--gold-border);gap:32px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:34px;height:34px;background:var(--gold);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">i</div>
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.65;"><strong style="color:var(--text);">Public Classes Available.</strong> OHS training is offered directly to the public at our Brackenfell premises. Contact us for schedules and to arrange training.</p>
+        </div>
+        <a onclick="navigate('contact')" style="display:inline-block;background:var(--gold);color:#fff;padding:12px 24px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;white-space:nowrap;">Enquire →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SOFTSKILLS ===== -->
+  <div id="page-softskills" class="page">
+    <div style="position:relative;overflow:hidden;min-height:300px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80" alt="Soft skills training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">People &amp; Workplace Development</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">Soft Skills</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">Workplace, management, individual, customer service and financial skills programmes to develop well-rounded, effective employees at every level of your organisation.</p>
+      </div>
+    </div>
+    <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;">
+        <div>
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;">Workplace</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Interpret and manage conflicts within the workplace</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Adhere to professional conduct and organisational ethics</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Identify and explain core and support functions of an organisation</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Implement training needs to upgrade skills</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Manage administration records</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Conduct a structured meeting</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Use communication skills to handle and resolve conflict</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Communicate verbally and non-verbally in the workplace</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Operate in a team</div>
+          </div>
+
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;margin-top:32px;">Customer Service</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Contact centre sales techniques</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Customer service</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Foster and maintain customer relations</div>
+          </div>
+
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;margin-top:32px;">Financial</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Apply basic financial procedures</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Manage expenditure against a budget</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Interpret basic financial statements</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Develop a business plan for a small business</div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;">Management</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Apply basic business concepts</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Demonstrate ability to lead a team or group</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Responsibilities of a team leader — ensuring organisational standards</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Describe and apply the management function</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Team Leader</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Build a team</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Perform one-on-one training on the job</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Demonstrate understanding of employment relations in an organisation</div>
+          </div>
+
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;margin-top:32px;">Individual Development</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Plan strategically to improve new venture performance</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Perform basic business calculations</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Present information in report format</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Apply knowledge of self to make personal decisions</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Manage time productively</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Solve problems, make decisions and implement solutions</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Investigate life and work related problems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== OPERATOR ===== -->
+  <div id="page-operator" class="page">
+    <div style="position:relative;overflow:hidden;min-height:300px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=1400&q=80" alt="Forklift operator training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">TETA Accredited · TETA12-223</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">Operator Training</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">Comprehensive F-code, C-code, plant operator, driving and value-adding operator training — all aligned to the Driven Machinery Act and TETA-accredited.</p>
+      </div>
+    </div>
+    <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
+        <div>
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;">F-Codes — Forklifts &amp; Trucks</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F1</span><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Forklift-Training.pdf" target="_blank" style="color:var(--text-mid);text-decoration:none;">Counter balanced lift truck — Forklifts up to 3 000 kg</a></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F2</span><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Forklift-Training.pdf" target="_blank" style="color:var(--text-mid);text-decoration:none;">Counter balanced lift truck — Forklifts up to 7 000 kg</a></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F3</span><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Forklift-Training.pdf" target="_blank" style="color:var(--text-mid);text-decoration:none;">Counter balanced lift truck — Forklifts up to 15 000 kg</a></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F5</span><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Reach-Truck-Training.pdf" target="_blank" style="color:var(--text-mid);text-decoration:none;">Advanced defined purpose — Reach Trucks 2 500 kg</a></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F6</span><span>Pallet trucks under 2 000 kg</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F7</span><span>Pallet trucks above 2 000 kg</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F8</span><span>Advanced defined purpose — Order Picker</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F10</span><span>Side loader lift truck</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F11</span><span>Rough terrain / earth moving / agricultural (with lifting attachment)</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F12</span><span>Battery powered pallet truck</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F13</span><span>VNA — Non-elevating</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F14</span><span>VNA — Elevating cab</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F15</span><span>Rail mounted stacker</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:28px;">F16</span><span>Rail mounted stacker</span></div>
+          </div>
+
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;margin-top:32px;">Value-Adding Operator Training</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Sling and communicate during crane operations</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Safe Lifting Practice</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Racking and Stacking</div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;">C-Codes — Cranes</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:32px;">C30</span><span>Overhead / gantry cranes — pendant and radio controlled</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:32px;">C31</span><span>Overhead / gantry cranes — cab controlled</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:32px;">C32</span><span>Truck mounted cranes — specific capacity</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:32px;">C33</span><span>Hydraulic mobile crane — up to 50 000 kg capacity</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:32px;">C46</span><span>Telescopic boom handler</span></div>
+            <div style="padding:12px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start;"><span style="font-family:var(--font-head);font-size:12px;font-weight:700;color:var(--gold);flex-shrink:0;min-width:32px;">C53</span><span>Mobile elevating work platform — cherry pickers</span></div>
+          </div>
+
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;margin-top:32px;">Plant Operators</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Operate a front end loader</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Operate an excavator</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Operate a backhoe loader (Digger Loader)</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);border-bottom:1px solid var(--border);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Operate a tractor</div>
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Operate an articulated dump truck</div>
+          </div>
+
+          <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;margin-top:32px;">Driving</p>
+          <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);">
+            <div style="padding:13px 16px;font-size:13px;color:var(--text-mid);display:flex;gap:10px;"><span style="color:var(--gold);font-weight:700;flex-shrink:0;">—</span>Convey dangerous goods by road (HAZCHEM)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <div id="page-contact" class="page">
+    <div style="position:relative;overflow:hidden;min-height:260px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1400&q=80" alt="Contact us" style="width:100%;height:100%;object-fit:cover;display:block;min-height:260px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Get in Touch</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">Contact Us</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">Whether you need a single course or a full training solution for your workforce, we're ready to help. Send us a message or give us a call.</p>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+      <!-- CONTACT INFO -->
+      <div style="padding:52px 64px;border-right:1px solid var(--border);">
+        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:24px;">Contact Details</p>
+        <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);margin-bottom:32px;">
+          <div style="padding:20px 22px;border-bottom:1px solid var(--border);">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Address</div>
+            <div style="font-size:15px;color:var(--text);font-weight:500;line-height:1.6;">6 Eben Olivier Street<br>Springbok Park, Brackenfell<br>Cape Town</div>
+          </div>
+          <div style="padding:20px 22px;border-bottom:1px solid var(--border);">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Telephone</div>
+            <div style="font-size:15px;font-weight:500;"><a href="tel:0218229052" style="color:var(--gold);text-decoration:none;">021 822 9052</a> / <a href="tel:0218229053" style="color:var(--gold);text-decoration:none;">9053</a></div>
+          </div>
+          <div style="padding:20px 22px;border-bottom:1px solid var(--border);">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Email</div>
+            <div style="font-size:15px;font-weight:500;"><a href="mailto:francois@fbtc.co.za" style="color:var(--gold);text-decoration:none;">francois@fbtc.co.za</a></div>
+          </div>
+          <div style="padding:20px 22px;">
+            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Registration</div>
+            <div style="font-size:14px;color:var(--text-muted);">Reg. No. 2011/031684/23</div>
+          </div>
+        </div>
+        <div style="background:var(--bg-section);border:1px solid var(--border);padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:160px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7;margin-bottom:10px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div style="font-size:13px;color:var(--text-muted);">6 Eben Olivier St, Springbok Park, Brackenfell</div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div style="padding:52px 64px;background:var(--bg-off);">
+        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:24px;">Send a Message</p>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Your Name</label>
+            <input type="text" placeholder="Full name" style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Email Address</label>
+            <input type="email" placeholder="email@company.co.za" style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Phone Number</label>
+            <input type="tel" placeholder="0xx xxx xxxx" style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Course / Service Interest</label>
+            <select style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
+              <option value="">Select a category...</option>
+              <option>Construction</option>
+              <option>Medicals</option>
+              <option>OHS</option>
+              <option>Soft Skills</option>
+              <option>Operator Training</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Message</label>
+            <textarea placeholder="Tell us about your training requirements..." style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;resize:vertical;min-height:120px;"></textarea>
+          </div>
+          <button style="background:var(--gold);color:#fff;border:none;cursor:pointer;padding:14px 30px;font-family:var(--font-body);font-size:13px;font-weight:600;letter-spacing:0.5px;text-align:left;align-self:flex-start;">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- #app -->
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="FBTC" style="height:48px;width:auto;display:block;margin-bottom:14px;filter:brightness(0) invert(1);">
+      <div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:#E8E0D0;letter-spacing:0.3px;">Future Building<br>Training Consultants</div>
+      <p class="footer-tagline">Accredited training and medical services. Our vision is to train for a better tomorrow.</p>
+      <p style="margin-top:12px;font-size:11px;color:#4A4840;">Reg. No. 2011/031684/23</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a onclick="navigate('construction')">Construction</a></li>
+        <li><a onclick="navigate('medicals')">Medicals</a></li>
+        <li><a onclick="navigate('ohs')">OHS</a></li>
+        <li><a onclick="navigate('softskills')">Soft Skills</a></li>
+        <li><a onclick="navigate('operator')">Operator Training</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a onclick="navigate('about')">About FBTC</a></li>
+        <li><a onclick="navigate('contact')">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:0218229052">021 822 9052/3</a></li>
+        <li><a href="mailto:francois@fbtc.co.za">francois@fbtc.co.za</a></li>
+        <li style="color:#787060;font-size:12px;line-height:1.6;">6 Eben Olivier Street<br>Springbok Park<br>Brackenfell, Cape Town</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 FBT Consultants (Pty) Ltd. All rights reserved.</span>
+    <span class="footer-reg">TETA12-223 · CETA 1R15167 · B-BBEE Level 4</span>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

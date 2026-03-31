@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OHS Training – FBTC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo" onclick="navigate('home')">
+    <img src="../assets/images/logo.png" alt="FBTC" class="nav-logo-img">
+    <div>
+      <div class="nav-logo-text">Future Building</div>
+      <div class="nav-logo-sub">Training Consultants</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="navigate('home')" data-page="home">Home</a></li>
+    <li><a onclick="navigate('about')" data-page="about">About</a></li>
+    <li><a onclick="navigate('construction')" data-page="construction">Construction</a></li>
+    <li><a onclick="navigate('medicals')" data-page="medicals">Medicals</a></li>
+    <li><a onclick="navigate('ohs')" data-page="ohs">OHS</a></li>
+    <li><a onclick="navigate('softskills')" data-page="softskills">Soft Skills</a></li>
+    <li><a onclick="navigate('operator')" data-page="operator">Operator</a></li>
+  </ul>
+  <div class="nav-contact-mini">
+    <a href="tel:0218229052">021 822 9052</a>
+  </div>
+  <a class="nav-cta" onclick="navigate('contact')">Contact Us</a>
+</nav>
+
+
+<div id="app">
+
+  <div id="page-ohs" class="page active">
+    <div style="position:relative;overflow:hidden;min-height:300px;border-bottom:1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1400&q=80" alt="OHS safety training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
+      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
+        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Workplace Safety &amp; Compliance</p>
+        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">OHS Training</h1>
+        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">A comprehensive suite of Occupational Health &amp; Safety short courses to keep your workplace legislatively compliant. Public classes available at our Brackenfell premises.</p>
+      </div>
+    </div>
+    <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px;">OHS Short Courses</p>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:32px;">
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Fire-Fighting.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Apply fire fighting techniques</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Chemical-Handling.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Controlling hazardous and dangerous goods</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Chemical-Handling.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Move and store a hazardous load</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Risk-Assessment.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Continuous risk assessment</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Accident-Investigation.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Conduct an investigation into workplace incidents</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-First-Aid.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">First Aid Level 1 — Basic Life Support &amp; First Aid Procedures</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-She-Representative.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Health and Safety Representative (SHE Rep)</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Introduction to Occupational Health and Safety</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">OHS and general housekeeping</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Evacuation-Procedures.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Evacuation Procedures (Fire Marshall)</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">HIV in the Workplace</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Work Permits</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Movement of people and material</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">OHS Legislation</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Legal-Liability.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">OHS Act — Responsibilities / Liabilities</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-OHS-and-Environmental-Principles.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Apply OHS and Environmental Principles</a></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Baseline Assessments</span></div>
+        <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Conduct, report and follow up on a safety audit inspection</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr auto;align-items:center;padding:24px 28px;background:var(--gold-bg);border:1px solid var(--gold-border);gap:32px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:34px;height:34px;background:var(--gold);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">i</div>
+          <p style="font-size:14px;color:var(--text-mid);line-height:1.65;"><strong style="color:var(--text);">Public Classes Available.</strong> OHS training is offered directly to the public at our Brackenfell premises. Contact us for schedules and to arrange training.</p>
+        </div>
+        <a onclick="navigate('contact')" style="display:inline-block;background:var(--gold);color:#fff;padding:12px 24px;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer;white-space:nowrap;">Enquire →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-home" class="page"></div>
+  <div id="page-about" class="page"></div>
+  <div id="page-construction" class="page"></div>
+  <div id="page-medicals" class="page"></div>
+  <div id="page-softskills" class="page"></div>
+  <div id="page-operator" class="page"></div>
+  <div id="page-contact" class="page"></div>
+
+</div><!-- #app -->
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="FBTC" style="height:48px;width:auto;display:block;margin-bottom:14px;filter:brightness(0) invert(1);">
+      <div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:#E8E0D0;letter-spacing:0.3px;">Future Building<br>Training Consultants</div>
+      <p class="footer-tagline">Accredited training and medical services. Our vision is to train for a better tomorrow.</p>
+      <p style="margin-top:12px;font-size:11px;color:#4A4840;">Reg. No. 2011/031684/23</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a onclick="navigate('construction')">Construction</a></li>
+        <li><a onclick="navigate('medicals')">Medicals</a></li>
+        <li><a onclick="navigate('ohs')">OHS</a></li>
+        <li><a onclick="navigate('softskills')">Soft Skills</a></li>
+        <li><a onclick="navigate('operator')">Operator Training</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a onclick="navigate('about')">About FBTC</a></li>
+        <li><a onclick="navigate('contact')">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:0218229052">021 822 9052/3</a></li>
+        <li><a href="mailto:francois@fbtc.co.za">francois@fbtc.co.za</a></li>
+        <li style="color:#787060;font-size:12px;line-height:1.6;">6 Eben Olivier Street<br>Springbok Park<br>Brackenfell, Cape Town</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 FBT Consultants (Pty) Ltd. All rights reserved.</span>
+    <span class="footer-reg">TETA12-223 · CETA 1R15167 · B-BBEE Level 4</span>
+  </div>
+</footer>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
