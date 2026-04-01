@@ -33,6 +33,10 @@
     <a href="tel:0218229052">021 822 9052</a>
   </div>
   <a class="nav-cta" onclick="navigate('contact')">Contact Us</a>
+
+  <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 
@@ -91,7 +95,7 @@
     </div>
 
     <!-- FEATURE STRIP -->
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--border);">
+    <div class="rg-4col" style="border-bottom:1px solid var(--border);">
       <div style="padding:28px 32px;border-right:1px solid var(--border);display:flex;gap:14px;align-items:flex-start;">
         <div style="width:40px;height:40px;background:var(--gold-bg);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -137,8 +141,8 @@
     </div>
 
     <!-- Row 1: OHS full-width feature -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
-      <div style="position:relative;overflow:hidden;min-height:340px;">
+    <div class="rg-2col" style="border-bottom:1px solid var(--border);">
+      <div class="rg-hero-img showcase-main">
         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Construction safety training" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.55) 0%,transparent 70%);"></div>
         <div style="position:absolute;bottom:32px;left:36px;right:36px;">
@@ -148,8 +152,8 @@
           <a onclick="navigate('construction')" style="display:inline-block;background:var(--gold);color:#fff;padding:10px 20px;font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;cursor:pointer;">View Courses →</a>
         </div>
       </div>
-      <div style="display:grid;grid-template-rows:1fr 1fr;">
-        <div style="position:relative;overflow:hidden;border-bottom:1px solid var(--border);">
+      <div class="showcase-right-stack">
+        <div class="rg-hero-img showcase-quarter" style="border-bottom:1px solid var(--border);">
           <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=600&q=80" alt="Forklift operator training" style="width:100%;height:100%;object-fit:cover;display:block;min-height:170px;">
           <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,transparent 60%);"></div>
           <div style="position:absolute;bottom:20px;left:24px;right:24px;">
@@ -158,7 +162,7 @@
           </div>
           <div style="position:absolute;inset:0;cursor:pointer;" onclick="navigate('operator')"></div>
         </div>
-        <div style="position:relative;overflow:hidden;">
+        <div class="rg-hero-img showcase-quarter">
           <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&q=80" alt="Medical health check" style="width:100%;height:100%;object-fit:cover;display:block;min-height:170px;">
           <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,transparent 60%);"></div>
           <div style="position:absolute;bottom:20px;left:24px;right:24px;">
@@ -171,8 +175,8 @@
     </div>
 
     <!-- Row 2: OHS + Soft Skills side by side -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
-      <div style="position:relative;overflow:hidden;min-height:280px;border-right:1px solid var(--border);">
+    <div class="rg-2col" style="border-bottom:1px solid var(--border);">
+      <div class="rg-hero-img showcase-half" style="border-right:1px solid var(--border);">
         <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80" alt="OHS safety first aid" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,transparent 55%);"></div>
         <div style="position:absolute;bottom:28px;left:32px;right:32px;">
@@ -181,7 +185,7 @@
           <a onclick="navigate('ohs')" style="display:inline-block;border:1px solid rgba(255,255,255,0.5);color:#fff;padding:8px 18px;font-size:12px;font-weight:600;text-decoration:none;cursor:pointer;">View Courses →</a>
         </div>
       </div>
-      <div style="position:relative;overflow:hidden;min-height:280px;">
+      <div class="rg-hero-img showcase-half">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80" alt="Soft skills team training" style="width:100%;height:100%;object-fit:cover;display:block;">
         <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,transparent 55%);"></div>
         <div style="position:absolute;bottom:28px;left:32px;right:32px;">
@@ -193,8 +197,8 @@
     </div>
 
     <!-- WHY FBTC SECTION -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
-      <div style="padding:56px 64px;border-right:1px solid var(--border);">
+    <div class="rg-2col" style="border-bottom:1px solid var(--border);">
+      <div class="rp-inner" style="border-right:1px solid var(--border);">
         <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;">Why Choose FBTC</p>
         <h2 style="font-family:var(--font-head);font-size:38px;font-weight:700;text-transform:uppercase;color:var(--text);line-height:1.05;margin-bottom:20px;">Your Workforce.<br>Our Expertise.</h2>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:18px;">Established in 2011 by Francois Gantz, FBTC has grown into a leading accredited training and medical service provider in the Western Cape. With more than 23 years of combined training experience, we deliver practical, results-driven interventions that translate directly into a safer, more skilled and compliant workforce.</p>
@@ -254,7 +258,7 @@
     </div>
 
     <!-- CTA BAND -->
-    <div style="display:grid;grid-template-columns:1fr auto;align-items:center;padding:44px 80px;background:var(--gold);gap:32px;border-bottom:1px solid var(--border);">
+    <div class="rg-cta-band" style="background:var(--gold);border-bottom:1px solid var(--border);">
       <div>
         <div style="font-family:var(--font-head);font-size:28px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:8px;">Ready to Train Your Workforce?</div>
         <p style="font-size:14px;color:rgba(255,255,255,0.85);max-width:560px;">Contact us today for a no-obligation training needs assessment. We serve clients across South Africa from our Brackenfell base.</p>
@@ -266,7 +270,7 @@
     </div>
 
     <!-- ACCREDITATION LOGOS STRIP -->
-    <div style="padding:32px 80px;border-bottom:1px solid var(--border);background:#fff;">
+    <div class="rp-strip" style="border-bottom:1px solid var(--border);background:#fff;">
       <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:20px;text-align:center;">Our Accreditations &amp; Registrations</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
         <div style="padding:10px 22px;border:1px solid var(--border);font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;">TETA</div>
@@ -297,7 +301,7 @@
     </div>
 
     <!-- VISION + MISSION SPLIT -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+    <div class="rg-2col" style="border-bottom:1px solid var(--border);">
       <div style="padding:52px 64px;border-right:1px solid var(--border);">
         <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;">Our Vision</p>
         <h2 style="font-family:var(--font-head);font-size:30px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:16px;">Train for a Better Tomorrow</h2>
@@ -311,7 +315,7 @@
     </div>
 
     <!-- COMPANY STORY + STATS -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+    <div class="rg-2col" style="border-bottom:1px solid var(--border);">
       <div style="padding:52px 64px;border-right:1px solid var(--border);">
         <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;">Our Story</p>
         <h2 style="font-family:var(--font-head);font-size:30px;font-weight:700;text-transform:uppercase;color:var(--text);margin-bottom:18px;">Founded 2011 by Francois Gantz</h2>
@@ -378,7 +382,7 @@
     </div>
     <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
       <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px;">Short Courses: Construction</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);">
+      <div class="rg-grid-3" style="gap:1px;background:var(--border);border:1px solid var(--border);">
         <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Erect, use and dismantle access equipment</span></div>
         <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Scaffold Inspection</span></div>
         <div style="background:#fff;padding:20px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><span style="font-size:14px;color:var(--text-mid);line-height:1.5;">Implement roadside safety procedures</span></div>
@@ -470,7 +474,7 @@
     </div>
     <div style="padding:52px 80px;border-bottom:1px solid var(--border);">
       <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px;">OHS Short Courses</p>
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:32px;">
+      <div class="rg-grid-2" style="gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:32px;">
         <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Fire-Fighting.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Apply fire fighting techniques</a></div>
         <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-left:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Chemical-Handling.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Controlling hazardous and dangerous goods</a></div>
         <div style="background:#fff;padding:18px 22px;display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--border);"><div style="width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:5px;"></div><a href="https://fbtc.co.za/wp-content/uploads/2023/02/FBTC-Training-Chemical-Handling.pdf" target="_blank" style="font-size:14px;color:var(--text-mid);text-decoration:none;line-height:1.5;">Move and store a hazardous load</a></div>
@@ -652,7 +656,7 @@
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
+    <div class="rg-2col" style="border-bottom:1px solid var(--border);">
       <!-- CONTACT INFO -->
       <div style="padding:52px 64px;border-right:1px solid var(--border);">
         <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:24px;">Contact Details</p>

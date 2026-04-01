@@ -466,3 +466,373 @@
   .divider { height: 1px; background: var(--border); margin: 0; }
   .text-gold { color: var(--gold); }
   .mt-0 { margin-top: 0 !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE — MOBILE-FIRST BREAKPOINTS
+   Breakpoints:
+     sm:  640px  (large phones landscape)
+     md:  768px  (tablets)
+     lg:  1024px (small laptops)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Hamburger nav (hidden on desktop) ─────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column; gap: 5px; cursor: pointer;
+  padding: 6px; background: none; border: none; margin-left: auto;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 2px; background: var(--text);
+  transition: all 0.2s;
+}
+.nav-mobile-open .nav-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-mobile-open .nav-hamburger span:nth-child(2) { opacity: 0; }
+.nav-mobile-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Utility responsive grid classes (applied via class="" patches) ─ */
+.rg-hero-img  { position: relative; overflow: hidden; }
+.rg-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.rg-hero-text {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding-left: 80px; padding-right: 80px;
+}
+
+.rg-cta-band {
+  display: grid; grid-template-columns: 1fr auto;
+  align-items: center; padding: 44px 80px; gap: 32px;
+}
+
+.rg-2col      { display: grid; grid-template-columns: 1fr 1fr; }
+.rg-2col-gap  { display: grid; grid-template-columns: 1fr 1fr; }
+.rg-3col      { display: grid; grid-template-columns: repeat(3, 1fr); }
+.rg-4col      { display: grid; grid-template-columns: repeat(4, 1fr); }
+.rg-5col      { display: grid; grid-template-columns: repeat(5, 1fr); }
+.rg-grid-2    { display: grid; grid-template-columns: repeat(2, 1fr); }
+.rg-grid-3    { display: grid; grid-template-columns: repeat(3, 1fr); }
+
+.rp-section    { padding: 56px 80px; }
+.rp-section-sm { padding: 48px 80px; }
+.rp-strip      { padding: 32px 80px; }
+.rp-inner      { padding: 56px 64px; }
+.rp-inner-sm   { padding: 48px 64px; }
+.rp-announce   { padding: 14px 80px; }
+.rp-pad        { padding-left: 80px; padding-right: 80px; }
+
+
+/* ══════════════════════════════════════════════════════════
+   LG — 1024px and below
+   ══════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+
+  /* Nav — collapse links into hamburger */
+  #nav { padding: 0 24px; gap: 16px; }
+  .nav-links { display: none; flex-direction: column; gap: 0;
+    position: fixed; top: var(--nav-h); left: 0; right: 0;
+    background: #fff; border-bottom: 1px solid var(--border);
+    padding: 8px 0; z-index: 99; }
+  .nav-links.open { display: flex; }
+  .nav-links li { width: 100%; }
+  .nav-links a { display: block; padding: 12px 24px; border-radius: 0; }
+  .nav-contact-mini { display: none; }
+  .nav-hamburger { display: flex; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+
+  /* Home hero — stack right panel below */
+  .home-hero { grid-template-columns: 1fr; min-height: auto; }
+  .home-hero-left { padding: 48px 40px; border-right: none; border-bottom: 1px solid var(--border); }
+  .home-hero h1 { font-size: 48px; }
+  .home-hero-right { padding: 32px 40px; }
+
+  /* Feature strip 4→2 cols */
+  .rg-4col { grid-template-columns: 1fr 1fr; }
+
+  /* All standard 2-col grids stay as-is at this size */
+
+  /* Paddings */
+  .rp-section    { padding: 48px 40px; }
+  .rp-section-sm { padding: 40px 40px; }
+  .rp-strip      { padding: 24px 40px; }
+  .rp-inner      { padding: 48px 40px; }
+  .rp-inner-sm   { padding: 40px 40px; }
+  .rp-announce   { padding: 14px 40px; }
+  .rp-pad        { padding-left: 40px; padding-right: 40px; }
+  .rg-cta-band   { padding: 40px 40px; }
+  .rg-hero-text  { padding-left: 40px; padding-right: 40px; }
+
+  /* Named CSS class paddings */
+  .section-header { padding: 36px 40px 24px; }
+  .course-sections { padding: 40px 40px; }
+  .course-intro    { padding: 32px 40px; }
+  .announce-bar    { padding: 14px 40px; }
+  .content-wrap    { padding: 40px 40px; }
+  .page-hero       { padding: 40px 40px 36px; }
+
+  footer { padding: 48px 40px 28px; margin-top: 56px; }
+
+  /* Hero heights */
+  .rg-hero-img[style*="height:400px"] { height: 320px !important; }
+  .rg-hero-img[style*="height:380px"] { height: 280px !important; }
+  .rg-hero-img[style*="height:320px"] { height: 240px !important; }
+  .page-hero h1 { font-size: 40px; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   MD — 768px and below
+   ══════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* 2-col → 1-col for most grids */
+  .rg-2col, .rg-3col, .rg-4col, .rg-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .rg-2col-gap { grid-template-columns: 1fr; gap: 24px !important; }
+
+  /* Grid-2 (operator F/C code tables) stays 1-col */
+  .rg-grid-2 { grid-template-columns: 1fr; }
+
+  /* CTA band — stack */
+  .rg-cta-band {
+    grid-template-columns: 1fr; padding: 32px 24px; gap: 20px;
+    text-align: left;
+  }
+  .rg-cta-band > a, .rg-cta-band > div > a { align-self: flex-start; }
+
+  /* 5-col quick links → 2-col */
+  .rg-5col { grid-template-columns: 1fr 1fr; }
+
+  /* Paddings tighter on mobile */
+  .rp-section    { padding: 40px 24px; }
+  .rp-section-sm { padding: 32px 24px; }
+  .rp-strip      { padding: 20px 24px; }
+  .rp-inner      { padding: 32px 24px; }
+  .rp-inner-sm   { padding: 28px 24px; }
+  .rp-announce   { padding: 12px 24px; }
+  .rp-pad        { padding-left: 24px; padding-right: 24px; }
+  .rg-hero-text  { padding-left: 24px; padding-right: 24px; padding-bottom: 32px !important; }
+
+  /* Named paddings */
+  .section-header { padding: 28px 24px 20px; flex-direction: column; gap: 8px; }
+  .course-sections { padding: 32px 24px; }
+  .course-intro    { padding: 24px 24px; }
+  .announce-bar    { padding: 12px 24px; }
+  .content-wrap    { padding: 32px 24px; }
+  .page-hero       { padding: 32px 24px 28px; }
+  footer           { padding: 40px 24px 24px; margin-top: 40px; }
+
+  /* About grid */
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Contact grid */
+  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Home hero */
+  .home-hero-left { padding: 40px 24px; }
+  .home-hero-right { padding: 28px 24px; }
+  .home-hero h1 { font-size: 40px; }
+  .home-hero-actions { flex-direction: column; }
+  .btn-primary, .btn-outline { width: 100%; text-align: center; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+  /* Hero images shorter on mobile */
+  .rg-hero-img[style*="height:400px"] { height: 260px !important; }
+  .rg-hero-img[style*="height:380px"] { height: 240px !important; }
+  .rg-hero-img[style*="height:320px"] { height: 200px !important; }
+
+  /* Hero title sizing */
+  .rg-hero-text h1 { font-size: 40px !important; }
+  .page-hero h1 { font-size: 34px; }
+
+  /* Border removals when stacked (no orphan right-borders) */
+  .rg-2col > div[style*="border-right"] { border-right: none !important; border-bottom: 1px solid var(--border); }
+  .rg-3col > div[style*="border-right"] { border-right: none !important; border-bottom: 1px solid var(--border); }
+
+  /* Services grid → 1-col */
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { border-right: none; border-bottom: 1px solid var(--border); }
+  .service-card:nth-child(3n) { border-right: none; }
+  .service-card:nth-last-child(-n+3) { border-bottom: 1px solid var(--border); }
+  .service-card:last-child { border-bottom: none; }
+
+  /* Home showcase image rows → stack */
+  .home-showcase-row { grid-template-columns: 1fr !important; }
+
+  /* Stat grids */
+  .stat-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Operator/course 2-col split */
+  div[style*="display:grid;grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+  div[style*="display:grid;grid-template-columns:1fr auto"] {
+    grid-template-columns: 1fr !important;
+  }
+  div[style*="display:grid;grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  div[style*="display:grid;grid-template-columns:repeat(3,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+  div[style*="display:grid;grid-template-columns:repeat(5,1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  div[style*="display:grid;grid-template-columns:repeat(2,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Inline padding 80px → 24px */
+  div[style*="padding:56px 80px"],
+  div[style*="padding:52px 80px"],
+  div[style*="padding:48px 80px"],
+  div[style*="padding:44px 80px"],
+  div[style*="padding:32px 80px"] {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  div[style*="padding:56px 64px"],
+  div[style*="padding:48px 64px"],
+  div[style*="padding:40px 64px"] {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  div[style*="padding:14px 80px"] {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* Home image feature section */
+  div[style*="grid-template-columns:1fr 420px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* How it works 4-step */
+  div[style*="grid-template-columns:repeat(4,1fr)"] > div[style*="border-left"] {
+    border-left: none !important;
+    border-top: 1px solid var(--border);
+  }
+
+  /* CTA buttons in hero overlays */
+  .rg-hero-text a[style*="inline-block"] {
+    display: block !important;
+    text-align: center;
+  }
+
+  /* Contact form name/company side by side → stack */
+  div[style*="display:grid;grid-template-columns:1fr 1fr;gap:14px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Nav CTA — hide on small */
+  .nav-cta { display: none; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   SM — 480px and below
+   ══════════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  .home-hero h1 { font-size: 36px; }
+  .rg-hero-text h1 { font-size: 34px !important; }
+  .rg-hero-text p  { font-size: 14px !important; }
+
+  .rg-hero-img[style*="height:400px"] { height: 220px !important; }
+  .rg-hero-img[style*="height:380px"] { height: 200px !important; }
+  .rg-hero-img[style*="height:320px"] { height: 180px !important; }
+
+  /* Stats/feature 4-col → 1-col */
+  .rg-4col { grid-template-columns: 1fr !important; }
+
+  /* 5-col → 1-col */
+  .rg-5col { grid-template-columns: 1fr !important; }
+
+  /* Grid 2 → 1 */
+  .rg-grid-2, .rg-grid-3 { grid-template-columns: 1fr !important; }
+
+  /* Stat grid full width */
+  .stat-grid { grid-template-columns: 1fr !important; }
+
+  /* Footer nav cols */
+  .footer-grid { grid-template-columns: 1fr; }
+
+  /* Service cards */
+  .service-card { padding: 24px 20px; }
+
+  /* Accreditation strip wrap */
+  .rp-strip div[style*="display:flex;gap:12px;flex-wrap:wrap"] {
+    gap: 8px !important;
+  }
+
+  /* Home hero actions */
+  .home-hero-actions { flex-direction: column; }
+
+  /* Tightest paddings */
+  .rp-section    { padding: 28px 16px; }
+  .rp-section-sm { padding: 24px 16px; }
+  .rp-inner      { padding: 24px 16px; }
+  .rp-inner-sm   { padding: 20px 16px; }
+
+  div[style*="padding:56px 80px"],
+  div[style*="padding:52px 80px"],
+  div[style*="padding:48px 80px"],
+  div[style*="padding:44px 80px"],
+  div[style*="padding:32px 80px"],
+  div[style*="padding:56px 64px"],
+  div[style*="padding:48px 64px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .section-header { padding: 24px 16px 16px; }
+  .course-sections { padding: 24px 16px; }
+  .page-hero { padding: 28px 16px 24px; }
+  .content-wrap { padding: 24px 16px; }
+  footer { padding: 32px 16px 20px; }
+  .announce-bar { padding: 10px 16px; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   NAV MOBILE HELPERS
+   ══════════════════════════════════════════════════════════ */
+#nav.nav-mobile-open .nav-links { display: flex; }
+
+
+/* ── Home image showcase ──────────────────────────────────────── */
+.showcase-main    { min-height: 340px; }
+.showcase-half    { min-height: 280px; }
+.showcase-quarter { min-height: 170px; }
+.showcase-right-stack { display: grid; grid-template-rows: 1fr 1fr; }
+
+@media (max-width: 768px) {
+  .home-showcase-row { grid-template-columns: 1fr !important; }
+  .showcase-right-stack { grid-template-rows: auto auto; grid-template-columns: 1fr 1fr; }
+  .showcase-quarter { min-height: 200px; }
+  .showcase-main { min-height: 260px; }
+  .showcase-half { min-height: 220px; }
+}
+
+@media (max-width: 480px) {
+  .showcase-right-stack { grid-template-columns: 1fr; }
+  .showcase-quarter { min-height: 180px; }
+}
+
+/* ── Fix: remove right-border on stacked elements ─────────────── */
+@media (max-width: 768px) {
+  .rg-2col > *[style*="border-right:1px solid var(--border)"] { border-right: none !important; }
+  .rg-3col > *[style*="border-right:1px solid var(--border)"] { border-right: none !important; }
+  .rg-4col > *[style*="border-right:1px solid var(--border)"] { border-right: none !important; }
+
+  /* Operator page — remove grid-template-rows left col */
+  div[style*="grid-template-rows"] { grid-template-rows: unset !important; }
+
+  /* Hero text position */
+  .rg-hero-text { padding-left: 24px !important; padding-right: 24px !important; }
+}
