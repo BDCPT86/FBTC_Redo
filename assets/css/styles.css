@@ -836,3 +836,170 @@
   /* Hero text position */
   .rg-hero-text { padding-left: 24px !important; padding-right: 24px !important; }
 }
+
+/* ── Targeted fixes from responsive audit ─────────────────────── */
+
+/* CTA band — always stack on mobile */
+@media (max-width: 768px) {
+  .rg-cta-band,
+  div[style*="grid-template-columns:1fr auto"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  /* CTA band buttons — stack and go full width */
+  .rg-cta-band a,
+  div[style*="grid-template-columns:1fr auto"] > a {
+    display: block !important;
+    text-align: center;
+    width: 100%;
+  }
+  /* Inline flex button rows inside CTAs */
+  div[style*="display:flex;gap:12px;"] > a {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Accreditation badges — prevent overflow, allow wrap */
+.accred-badges { flex-wrap: wrap; }
+
+@media (max-width: 480px) {
+  /* Badges smaller font so they don't break layout */
+  .accred-badge { font-size: 10px; padding: 4px 8px; }
+
+  /* Accreditation strip badges */
+  .rp-strip div[style*="padding:10px 22px"] {
+    padding: 7px 12px !important;
+    font-size: 11px !important;
+  }
+
+  /* How We Work steps — stack to single column */
+  div[style*="grid-template-columns:repeat(4,1fr)"] > div {
+    border-left: none !important;
+    border-top: 1px solid var(--border);
+  }
+  div[style*="grid-template-columns:repeat(4,1fr)"] > div:first-child {
+    border-top: none;
+  }
+
+  /* Step numbers — reduce */
+  div[style*="font-size:48px;font-weight:700;color:var(--gold-border)"] {
+    font-size: 36px !important;
+  }
+
+  /* Hero overlay text — tighten */
+  .rg-hero-text h1 { font-size: 30px !important; line-height: 1.0 !important; }
+  .rg-hero-text p  { font-size: 13px !important; }
+  .rg-hero-text    { padding-bottom: 24px !important; }
+
+  /* Home hero h1 */
+  .home-hero h1 { font-size: 34px; }
+  
+  /* Announce bar — allow text wrap */
+  .announce-bar { flex-wrap: wrap; }
+  .announce-text { font-size: 12px; }
+
+  /* Operator F-code tables stay 1 col */
+  .rg-grid-2 { grid-template-columns: 1fr !important; }
+}
+
+/* ── 320px — most aggressive fixes ───────────────────────────── */
+@media (max-width: 360px) {
+  /* Stat grid — single column */
+  .stat-grid { grid-template-columns: 1fr !important; }
+
+  /* All badges wrap gracefully */
+  .accred-badge { font-size: 9px; padding: 3px 7px; }
+
+  /* CTA buttons full width stacked */
+  .rg-cta-band { padding: 24px 16px !important; }
+
+  /* Feature strip — single col */
+  .rg-4col { grid-template-columns: 1fr !important; }
+
+  /* Process steps always single col */
+  div[style*="grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Keep nav readable */
+  .nav-logo-img { height: 34px !important; }
+}
+
+/* ── Fix: nav hamburger should kick in at 900px not 1024px ────── */
+@media (min-width: 901px) {
+  .nav-links { 
+    display: flex !important; 
+    flex-direction: row !important;
+    position: static !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  .nav-links li { width: auto; }
+  .nav-links a { display: inline-block; padding: 6px 12px; border-radius: 4px; }
+  .nav-hamburger { display: none !important; }
+  .nav-contact-mini { display: flex !important; }
+  .nav-cta { display: inline-block !important; }
+}
+
+@media (max-width: 900px) {
+  .nav-links { 
+    display: none;
+    flex-direction: column !important;
+    position: fixed !important;
+    top: var(--nav-h) !important;
+    left: 0; right: 0;
+    background: #fff !important;
+    border-bottom: 1px solid var(--border) !important;
+    padding: 8px 0 !important;
+    z-index: 99;
+  }
+  .nav-links.open { display: flex !important; }
+  .nav-hamburger { display: flex !important; }
+  .nav-contact-mini { display: none !important; }
+  .nav-cta { display: none !important; }
+  #nav { padding: 0 24px; gap: 16px; }
+}
+
+/* ── How We Work: single col below 520px ─────────────────────── */
+@media (max-width: 520px) {
+  div[style*="grid-template-columns:repeat(4,1fr)"].rg-4col {
+    grid-template-columns: 1fr !important;
+  }
+  /* Target the process section specifically */
+  .rp-section-sm div[style*="grid-template-columns:repeat(4,1fr)"],
+  div[style*="HOW WE WORK"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Fix: 1024px — restore 2-col grids that got collapsed ─────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .rg-2col { grid-template-columns: 1fr 1fr !important; }
+  /* But keep home showcase as single col - it's too squashed at 1024 */
+  .home-showcase-row { grid-template-columns: 1fr !important; }
+  .showcase-right-stack { grid-template-columns: 1fr 1fr; grid-template-rows: unset; }
+  .showcase-quarter { min-height: 200px; }
+}
+
+/* ── Fix: about page sidebar stacks below content on mobile ────── */
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── Fix: contact grid stacks on mobile ────────────────────────── */
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
+}
+
+/* ── Fix: inline border-right on stacked 2-col items ─────────── */
+@media (max-width: 768px) {
+  /* Remove right borders that become orphaned when stacked */
+  div[style*="border-right:1px solid var(--border)"] {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+  /* But keep borders on grid cells that are still side-by-side (rg-grid-2) */
+  .rg-grid-2 div[style*="border-right"] { border-right: none !important; }
+}

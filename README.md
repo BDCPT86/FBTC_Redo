@@ -1,175 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us – FBTC</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
-</head>
-<body>
+# FBTC Website
 
+## Folder Structure
 
-<!-- NAV -->
-<nav id="nav">
-  <div class="nav-logo" onclick="navigate('home')">
-    <img src="../assets/images/logo.png" alt="FBTC" class="nav-logo-img">
-    <div>
-      <div class="nav-logo-text">Future Building</div>
-      <div class="nav-logo-sub">Training Consultants</div>
-    </div>
-  </div>
-  <ul class="nav-links">
-    <li><a onclick="navigate('home')" data-page="home">Home</a></li>
-    <li><a onclick="navigate('about')" data-page="about">About</a></li>
-    <li><a onclick="navigate('construction')" data-page="construction">Construction</a></li>
-    <li><a onclick="navigate('medicals')" data-page="medicals">Medicals</a></li>
-    <li><a onclick="navigate('ohs')" data-page="ohs">OHS</a></li>
-    <li><a onclick="navigate('softskills')" data-page="softskills">Soft Skills</a></li>
-    <li><a onclick="navigate('operator')" data-page="operator">Operator</a></li>
-  </ul>
-  <div class="nav-contact-mini">
-    <a href="tel:0218229052">021 822 9052</a>
-  </div>
-  <a class="nav-cta" onclick="navigate('contact')">Contact Us</a>
+```
+fbtc-site/
+├── index.html                  # Single-page app entry point (all pages)
+├── README.md
+├── assets/
+│   ├── css/
+│   │   └── styles.css          # All styles
+│   ├── js/
+│   │   └── app.js              # Navigation logic + hash routing
+│   └── images/
+│       └── logo.png            # FBTC logo (transparent background)
+│           hero-*.jpg          # Page hero images (download from Unsplash — see below)
+└── pages/                      # Standalone page files (optional multi-page use)
+    ├── home.html
+    ├── about.html
+    ├── construction.html
+    ├── medicals.html
+    ├── ohs.html
+    ├── softskills.html
+    ├── operator.html
+    └── contact.html
+```
 
-  <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
+## Usage
 
+### Single-Page App
+Open `index.html` in a browser. All pages are loaded — navigation is handled
+client-side via `assets/js/app.js`. Hash routing is supported: `index.html#contact`
+jumps straight to the Contact page.
 
-<div id="app">
+### Individual Pages
+Each file in `pages/` is a standalone HTML file. Useful if you want to deploy
+as a traditional multi-page site. All asset references use `../assets/` paths.
 
-  <div id="page-contact" class="page active">
-    <div style="position:relative;overflow:hidden;min-height:260px;border-bottom:1px solid var(--border);">
-      <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1400&q=80" alt="Contact us" style="width:100%;height:100%;object-fit:cover;display:block;min-height:260px;">
-      <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 60%,transparent 100%);"></div>
-      <div style="position:absolute;top:50%;left:80px;transform:translateY(-50%);">
-        <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Get in Touch</p>
-        <h1 style="font-family:var(--font-head);font-size:52px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1.0;margin-bottom:12px;">Contact Us</h1>
-        <p style="font-size:15px;color:rgba(255,255,255,0.8);max-width:480px;line-height:1.65;">Whether you need a single course or a full training solution for your workforce, we're ready to help. Send us a message or give us a call.</p>
-      </div>
-    </div>
+## Images
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);">
-      <!-- CONTACT INFO -->
-      <div style="padding:52px 64px;border-right:1px solid var(--border);">
-        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:24px;">Contact Details</p>
-        <div style="display:flex;flex-direction:column;gap:0;border:1px solid var(--border);margin-bottom:32px;">
-          <div style="padding:20px 22px;border-bottom:1px solid var(--border);">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Address</div>
-            <div style="font-size:15px;color:var(--text);font-weight:500;line-height:1.6;">6 Eben Olivier Street<br>Springbok Park, Brackenfell<br>Cape Town</div>
-          </div>
-          <div style="padding:20px 22px;border-bottom:1px solid var(--border);">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Telephone</div>
-            <div style="font-size:15px;font-weight:500;"><a href="tel:0218229052" style="color:var(--gold);text-decoration:none;">021 822 9052</a> / <a href="tel:0218229053" style="color:var(--gold);text-decoration:none;">9053</a></div>
-          </div>
-          <div style="padding:20px 22px;border-bottom:1px solid var(--border);">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Email</div>
-            <div style="font-size:15px;font-weight:500;"><a href="mailto:francois@fbtc.co.za" style="color:var(--gold);text-decoration:none;">francois@fbtc.co.za</a></div>
-          </div>
-          <div style="padding:20px 22px;">
-            <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:6px;">Registration</div>
-            <div style="font-size:14px;color:var(--text-muted);">Reg. No. 2011/031684/23</div>
-          </div>
-        </div>
-        <div style="background:var(--bg-section);border:1px solid var(--border);padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:160px;">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7;margin-bottom:10px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div style="font-size:13px;color:var(--text-muted);">6 Eben Olivier St, Springbok Park, Brackenfell</div>
-        </div>
-      </div>
+Stock images are loaded from Unsplash CDN. To host them locally, download and
+place in `assets/images/`, then update the `src` attributes in each page.
 
-      <!-- FORM -->
-      <div style="padding:52px 64px;background:var(--bg-off);">
-        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:24px;">Send a Message</p>
-        <div style="display:flex;flex-direction:column;gap:16px;">
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Your Name</label>
-            <input type="text" placeholder="Full name" style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
-          </div>
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Email Address</label>
-            <input type="email" placeholder="email@company.co.za" style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
-          </div>
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Phone Number</label>
-            <input type="tel" placeholder="0xx xxx xxxx" style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
-          </div>
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Course / Service Interest</label>
-            <select style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;">
-              <option value="">Select a category...</option>
-              <option>Construction</option>
-              <option>Medicals</option>
-              <option>OHS</option>
-              <option>Soft Skills</option>
-              <option>Operator Training</option>
-              <option>General Enquiry</option>
-            </select>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:6px;">
-            <label style="font-size:11px;font-weight:600;letter-spacing:0.8px;color:var(--text-mid);text-transform:uppercase;">Message</label>
-            <textarea placeholder="Tell us about your training requirements..." style="padding:12px 14px;border:1px solid var(--border);font-family:var(--font-body);font-size:14px;color:var(--text);background:#fff;outline:none;resize:vertical;min-height:120px;"></textarea>
-          </div>
-          <button style="background:var(--gold);color:#fff;border:none;cursor:pointer;padding:14px 30px;font-family:var(--font-body);font-size:13px;font-weight:600;letter-spacing:0.5px;text-align:left;align-self:flex-start;">Send Message →</button>
-        </div>
-      </div>
-    </div>
-  </div>
+| Filename              | Unsplash URL                                                              |
+|-----------------------|---------------------------------------------------------------------------|
+| hero-team.jpg         | https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1400&q=80 |
+| hero-construction.jpg | https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80 |
+| hero-forklift.jpg     | https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=1400&q=80 |
+| hero-medical.jpg      | https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1400&q=80 |
+| hero-ohs.jpg          | https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1400&q=80 |
+| hero-softskills.jpg   | https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80 |
+| hero-contact.jpg      | https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80 |
+| mobile-medical.jpg    | https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=700&q=80  |
+| showcase-forklift.jpg | https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=600&q=80  |
+| showcase-medical.jpg  | https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&q=80  |
 
-  <div id="page-home" class="page"></div>
-  <div id="page-about" class="page"></div>
-  <div id="page-construction" class="page"></div>
-  <div id="page-medicals" class="page"></div>
-  <div id="page-ohs" class="page"></div>
-  <div id="page-softskills" class="page"></div>
-  <div id="page-operator" class="page"></div>
+## Fonts
+Google Fonts — Barlow Condensed (600, 700) and Barlow (400, 500, 600, italic).
+Loaded via CDN link in `<head>`.
 
-</div><!-- #app -->
-
-
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <img src="assets/images/logo.png" alt="FBTC" style="height:48px;width:auto;display:block;margin-bottom:14px;filter:brightness(0) invert(1);">
-      <div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:#E8E0D0;letter-spacing:0.3px;">Future Building<br>Training Consultants</div>
-      <p class="footer-tagline">Accredited training and medical services. Our vision is to train for a better tomorrow.</p>
-      <p style="margin-top:12px;font-size:11px;color:#4A4840;">Reg. No. 2011/031684/23</p>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a onclick="navigate('construction')">Construction</a></li>
-        <li><a onclick="navigate('medicals')">Medicals</a></li>
-        <li><a onclick="navigate('ohs')">OHS</a></li>
-        <li><a onclick="navigate('softskills')">Soft Skills</a></li>
-        <li><a onclick="navigate('operator')">Operator Training</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a onclick="navigate('about')">About FBTC</a></li>
-        <li><a onclick="navigate('contact')">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="tel:0218229052">021 822 9052/3</a></li>
-        <li><a href="mailto:francois@fbtc.co.za">francois@fbtc.co.za</a></li>
-        <li style="color:#787060;font-size:12px;line-height:1.6;">6 Eben Olivier Street<br>Springbok Park<br>Brackenfell, Cape Town</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 FBT Consultants (Pty) Ltd. All rights reserved.</span>
-    <span class="footer-reg">TETA12-223 · CETA 1R15167 · B-BBEE Level 4</span>
-  </div>
-</footer>
-
-<script src="../assets/js/app.js"></script>
-</body>
-</html>
+## Colours
+| Variable        | Value   | Usage                        |
+|-----------------|---------|------------------------------|
+| --gold          | #8B1A1A | FBTC crimson red (primary)   |
+| --gold-light    | #B02020 | Hover states                 |
+| --gold-bg       | #F9F0F0 | Light red tint backgrounds   |
+| --gold-border   | #DDB8B8 | Red-tinted borders           |
+| --text          | #1A1A1A | Primary text                 |
+| --text-muted    | #606060 | Body copy / secondary text   |
+| --border        | #DCDCDC | Grid / card borders          |
